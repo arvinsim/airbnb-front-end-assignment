@@ -1,13 +1,11 @@
 import { combineReducers } from 'redux'
 import { reducer as formReducer } from 'redux-form'
 import locationReducer from './location'
-import airbnbReducer from './airbnb'
 
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
     form: formReducer,
     location: locationReducer,
-    airbnb: airbnbReducer,
     ...asyncReducers
   })
 }

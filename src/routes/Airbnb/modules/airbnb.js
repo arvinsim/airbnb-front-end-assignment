@@ -1,5 +1,3 @@
-import fetchJsonp from 'fetch-jsonp'
-
 // Global Function
 const search_results = (json) => {
   return json
@@ -39,19 +37,6 @@ export function fetchAirBnbData () {
       .then((jsonText) => {
         dispatch(loadAirBnBData(eval(jsonText)))
       })
-
-    // fetchJsonp(AIRBNB_SEARCH_RESULTS_URL, {
-    //   jsonpCallback: 'search_results'
-    // })
-    //   .then(function (response) {
-    //     console.log('RESPONSE', response.text())
-    //     return response.json()
-    //   }).then(function (json) {
-    //     console.log('PARSED JSON', json)
-    //     dispatch(loadAirBnBData(json))
-    //   }).catch(function (error) {
-    //     console.log('PARSING FAILED', error)
-    //   })
   }
 }
 
