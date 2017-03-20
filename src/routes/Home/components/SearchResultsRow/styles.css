@@ -1,0 +1,116 @@
+/* Composition Classes */
+.badgeIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.badgeLabel {
+    color: #959595;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.toggleFavoriteIcon {
+    width: 22px;
+    height: 24px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Applied classes */
+.row {
+    border: 1px solid #CACACA;
+    border-top: 0;
+    padding: 15px 0;
+}
+
+.mainPictureContainer {
+    margin: 0 auto;
+    position: relative;
+    width: 150px;
+}
+.mainPicture img {
+    border: double 4px #000; 
+    width: 150px;
+    height: 100px;
+}
+.mainPictureText {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.details { padding-left: 0; padding-right: 0; }
+
+.userThumbnail { padding-left: 0; padding-right: 0; }
+.userThumbnail img { border-radius: 2px; width: 30px; height: 30px; }
+
+.badges { padding-top: 6px; }
+.reviewsIcon {
+    composes: badgeIcon;
+    background: url(../../assets/badges.png) 0 0;
+}
+.reviewsLabel { composes: badgeLabel; }
+
+.friendsIcon {
+    composes: badgeIcon;
+    background: url(../../assets/badges.png) 40px 0;
+}
+
+.friendsLabel { composes: badgeLabel; }
+
+.superhostIcon {
+    composes: badgeIcon;
+    background: url(../../assets/badges.png) 20px 0;
+}
+
+.superhostLabel { composes: badgeLabel; }
+
+.description {
+    text-align: left;
+}
+
+.name {
+    font-size: 28px;
+}
+
+.address {
+    font-size: 12px;
+    color: #959595;
+}
+
+.favorited {
+    composes: toggleFavoriteIcon;
+    background: url(../../assets/stars.png) 22px 0;
+}
+
+.notFavorited {
+    composes: toggleFavoriteIcon;
+    background: url(../../assets/stars.png) 0 0;
+}
+
+.price {
+    text-align: right;
+}
+
+.priceValue {
+    font-size: 28px;
+}
+
+.priceLabel {
+    font-size: 12px;
+    color: #959595;
+    font-weight: lighter;
+}

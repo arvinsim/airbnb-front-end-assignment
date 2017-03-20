@@ -1,0 +1,18 @@
+/* Composition classes */
+.textColor {
+  color: #AFAFAF;
+}
+
+/* Applied classes */
+.datepicker {
+  height: 25px;
+  padding: 0 10px;
+}
+
+.label {
+  composes: textColor;
+}
+
+.error {
+  composes: textColor;
+}

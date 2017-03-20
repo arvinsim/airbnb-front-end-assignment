@@ -1,0 +1,22 @@
+/* Composition classes */
+.formPadding {
+    padding-top: 20px;
+}
+
+/* Applied classes */
+.form {
+    background: #3C3F40;
+    color: #FFF;
+    border-radius: 15px 15px 0 0;
+    border: 1px outset #6C7072;
+}
+
+.location {
+    composes: formPadding;
+}
+
+.filters {
+    composes: formPadding;
+    color: #000;
+}
+
