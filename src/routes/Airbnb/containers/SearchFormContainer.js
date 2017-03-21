@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { submitToAirBnb } from '../modules/airbnb'
+import { submitToAirBnb } from '../store/airbnb'
 import SearchForm from '../components/SearchForm'
 
 class SearchFormContainer extends Component {

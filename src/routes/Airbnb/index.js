@@ -10,7 +10,7 @@ export default (store) => ({
       /*  Webpack - use require callback to define
           dependencies for bundling   */
       const Airbnb = require('./containers/AirbnbContainer').default
-      const reducer = require('./modules/airbnb').default
+      const reducer = require('./store/airbnb').default
 
       /*  Add the reducer to the store on key 'counter'  */
       injectReducer(store, { key: 'airbnb', reducer })

@@ -5,7 +5,7 @@ import { Col } from 'react-bootstrap'
 import { Field, reduxForm } from 'redux-form'
 
 // Validation
-import { searchFormValidate } from 'libs/airbnb'
+import { searchFormValidate } from '../../libs/airbnb'
 
 // Components
 import SearchDatePicker from '../SearchDatePicker'

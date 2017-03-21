@@ -1,4 +1,4 @@
-import { searchFormValidate } from 'libs/airbnb'
+import { searchFormValidate } from 'routes/Airbnb/libs/airbnb'
 
 describe('(Lib) Validation', () => {
   describe('searchFormValidate', () => {

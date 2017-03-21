@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { fetchAirBnbData } from '../modules/airbnb'
+import { fetchAirBnbData } from '../store/airbnb'
 import SearchResults from '../components/SearchResults'
 
 export class SearchResultsContainer extends Component {
